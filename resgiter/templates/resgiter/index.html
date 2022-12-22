@@ -1,0 +1,6 @@
+{% extends 'resgiter/layout.html' %}
+{% block body %}
+<h1>Hello, {{ request.user.first_name }}</h1>
+
+<a href="{% url 'resgiter:logout' %}">Log out</a>
+{% endblock %}
